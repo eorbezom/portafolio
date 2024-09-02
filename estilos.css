@@ -131,3 +131,47 @@ seccion donde se encuentra la foto y la redes sociales
     background-color: blue;
     border-color:white;
 }
+/*
+carousel
+*/
+.custom-carousel{
+    width: 80%;
+    max-width: 800px; 
+    height: 400px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    
+}
+.custom-carousel .carousel-inner {
+    height: 100%;
+}
+.custom-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover; 
+}
+.background-container {
+    position: relative;
+    background-image: url(https://imagizer.imageshack.com/img924/360/iuK3D6.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; 
+    padding-top: 50px;
+  }
+  
+  .custom-carousel {
+    position: relative;
+    z-index: 1; /* Asegura que el carrusel esté por encima de la imagen de fondo */
+  }
+.contenedor-carousel{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.10)
+        ), 
+        url(https://imagizer.imageshack.com/img924/360/iuK3D6.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
