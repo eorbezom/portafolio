@@ -11,12 +11,15 @@ html{
 }
 /* barra de navegacion*/
 .contend-header{
-    background-color: black;
+    background: linear-gradient(to top, rgba(26, 24, 24, 0.8), rgba(26, 22, 22, 0.7)),
+    url(https://imagizer.imageshack.com/img922/64/jpMBhl.jpg);
+    background-size: cover;
     position: relative;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 99;
+    box-shadow: 0 4px 8px rgba(99, 91, 91, 0.9);
 
 }
 .contend-header header{
@@ -60,3 +63,79 @@ html{
        
 }
 /* menu de*/
+.inicio {
+    background: linear-gradient(to top, rgba(26, 24, 24, 0.8), rgba(26, 22, 22, 0.5)),
+    url(https://imagizer.imageshack.com/img922/64/jpMBhl.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .contenido-baner{
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(99, 91, 91, 0.7);
+    
+}
+.inicio .contenido-baner h1{
+    margin-top: 40px;
+    font-size: 48px;
+    font-family:"Righteous" ;
+}
+.inicio .contenido-baner h2{
+    font-family: "Righteous";
+    font-size: 22px;
+}
+.redes {
+    position: absolute; /* Para que las redes sociales floten y se ubiquen donde tú quieres */
+    right: 0px; /* Ajusta la posición para alinearlas al costado derecho */
+    top: 50%; /* Ajusta la posición para que aparezcan centradas verticalmente */
+    transform: translateY(-50%); /* Centra los íconos verticalmente */
+    display: flex;
+    flex-direction: column; /* Hace que los íconos se dispongan de manera vertical */
+    gap: 10px; /* Espacio entre los íconos */
+    gap: 10px;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.8) ;
+    border-radius: 8%;
+    box-shadow: 0 4px 8px rgba(99, 91, 91, 0.9);
+}
+
+.redes a {
+    color: white; /* Puedes ajustar el color de los íconos */
+    font-size: 40px; /* Ajusta el tamaño de los íconos */
+    text-decoration: none; /* Quita subrayado o decoraciones innecesarias */
+}
+
+.redes a:hover {
+    color: red; /* Cambia el color cuando se hace hover sobre los íconos */
+}
+
+.informacion{
+    background-color: black;
+    margin: 0;
+    padding: 20px;
+    
+}
+.parrafo{
+    color: white;
+    font-size: 35px;
+    align-items:center;
+    margin: auto;
+    max-width: 1100px;
+
+}
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
