@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dela+Gothic+One&family=Delius&family=Passion+One:wght@400;700;900&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* barra de navegacion*/
+.contend-header{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+}
+.contend-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+.contend-header header .logo a{
+    font-family: "Righteous";
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+.contend-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contend-header header nav ul li a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 0px;
+    transition: .5s;
+    text-decoration: none;
+    
+}
+.contend-header header nav ul li a:hover{
+    color: red;
+}
+.nav-responsive{
+    background-color:rgb(8, 184, 175); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+       
+}
+/* menu de*/
