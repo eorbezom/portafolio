@@ -139,3 +139,117 @@ html{
     height: 80vh;
     text-align: center;
 }
+
+/* carrusel */
+
+/* Estilo por defecto */
+.contenedor_carrusel {
+    width: 80%; /* Ajusta el tamaño del contenedor */
+    margin: 0 auto; /* Para centrar el carrusel */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Añade espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
+    position: relative;
+    height: 100%; /* Asegúrate de que el fondo ocupe todo el alto del contenedor */
+}
+
+/* Ajuste de las imágenes dentro del carrusel */
+.carousel-item img {
+    width: 100%; /* La imagen ocupa todo el ancho del carrusel */
+    height: 550px; /* Cambia este valor para ajustar el tamaño de las imágenes */
+    object-fit: contain; /* Muestra la imagen completa sin cortarla */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+.contenedor_caja {
+    background-image: url(https://imagizer.imageshack.com/img922/1309/mnxcWq.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contenedor_caja h1{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 25px black;
+    font-size: 55px;
+    font-family:"Righteous" ;
+
+}
+
+/* Media query para pantallas más pequeñas (mobile) */
+@media (max-width: 768px) {
+    .contenedor_carrusel {
+        width: 100%; /* Toma el 100% del ancho de la pantalla */
+        height: 80vh; /* Aumenta el alto en relación a la altura del viewport */
+    }
+
+    .carousel-item img {
+        height: 350px; /* Cambia el tamaño de las imágenes para pantallas más pequeñas */
+    }
+}
+
+/* Media query para pantallas más estrechas y altas */
+@media (max-width: 480px) {
+    .contenedor_carrusel {
+        width: 100%; /* Ancho completo */
+        height: 90vh; /* Mayor altura para pantallas estrechas */
+    }
+
+    .carousel-item img {
+        height: 300px; /* Ajusta las imágenes para pantallas muy pequeñas */
+    }
+}
+
+/* footer*/
+
+footer {
+    position: relative;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+
+footer .logo img {
+    max-width: 250px;
+    margin-bottom: 20px;
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    border: 5px solid #333; /* Cambia el color y el grosor del borde */
+    border-radius: 10px; /* Para bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento, desenfoque, tamaño y color */
+}
+
+footer .footer-content p, footer .footer-content a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px red;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de contacto */
+.contact-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    position: absolute;
+    top: -25px; /* El botón sobresale del contenedor del footer */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.contact-btn:hover {
+    background-color: darkred;
+}
