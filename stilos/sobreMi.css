@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dela+Gothic+One&family=Delius&family=Passion+One:wght@400;700;900&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* barra de navegacion*/
+.contend-header{
+    background: linear-gradient(to top, rgba(26, 24, 24, 0.8), rgba(26, 22, 22, 0.7)),
+    url(https://imagizer.imageshack.com/img922/64/jpMBhl.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0 4px 8px rgba(99, 91, 91, 0.9);
+
+}
+.contend-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+.contend-header header .logo a{
+    font-family: "Righteous";
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+.contend-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contend-header header nav ul li a{
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 0px;
+    transition: .5s;
+    text-decoration: none;
+    
+}
+.contend-header header nav ul li a:hover{
+    color: red;
+}
+.nav-responsive{
+    background-color:rgb(8, 184, 175); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+       
+}
+
+
+/*contenido seccion*/
+
+.about-section {
+    background-color: #000; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    padding: 40px 20px; /* Espaciado interno */
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.about-section h2 {
+    font-size: 4em;
+    margin-bottom: 15px; /* Espacio debajo del título */
+    color: #fff; /* Color del texto del título */
+}
+
+.about-section p {
+    font-size: 2em; /* Tamaño de texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #ddd; /* Color del texto */
+    text-align: justify; /* Justificar texto */
+    margin: 10px 0; /* Espaciado entre párrafos */
+}
+
+
+
+main{
+    flex: 1;
+}
+/* footer*/
+
+footer {
+    position: relative;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+
+footer .logo img {
+    max-width: 250px;
+    margin-bottom: 20px;
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    border: 5px solid #333; /* Cambia el color y el grosor del borde */
+    border-radius: 10px; /* Para bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra: desplazamiento, desenfoque, tamaño y color */
+}
+
+footer .footer-content p, footer .footer-content a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    text-shadow: 1px 1px 3px red;
+}
+
+footer .footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del botón de contacto */
+.contact-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    position: absolute;
+    top: -25px; /* El botón sobresale del contenedor del footer */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.contact-btn:hover {
+    background-color: darkred;
+}
