@@ -7,7 +7,7 @@
     
 }
 html{
-    scroll-behavior: smooth;
+    height: 100%;
 }
 /* barra de navegacion*/
 .contend-header{
@@ -63,43 +63,94 @@ html{
 }
 
 body{
-    background-image: url(https://imagizer.imageshack.com/img922/64/jpMBhl.jpg);
-    background-size: cover;
-    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;    
+    min-height: 100vh;
+
 }
-/*contenido seccion*/
-
-.about-section {
-    background-color: #000; /* Color de fondo */
-    color: white; /* Color del texto */
-    text-align: center; /* Centrar texto */
-    padding: 40px 20px; /* Espaciado interno */   
-    width: 80%;
-    margin: auto;
-}
-
-.about-section h2 {
-    font-size: 4em;
-    margin-bottom: 15px; /* Espacio debajo del título */
-    color: #fff; /* Color del texto del título */
-}
-
-.about-section p {
-    font-size: 2em; /* Tamaño de texto */
-    line-height: 1.6; /* Espaciado entre líneas */
-    color: #ddd; /* Color del texto */
-    text-align: justify; /* Justificar texto */
-    margin: 10px 0; /* Espaciado entre párrafos */
-}
-
-
-
 main{
-    flex: 1;
+    flex-grow: 1;
 }
+
+.contenido_ciertficado{
+    background-color: black;
+}
+.sidebar {
+    position: fixed;
+    padding-top :55px ;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    padding-top: 20px;
+    box-shadow:   0 2px 25px black;
+    
+    
+}
+
+
+.sidebar .btn-option {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 16px white;
+}
+
+.sidebar .btn-option:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+
+
+
+
 /* footer*/
 
 footer {
+    position: fixed;
     position: relative;
     background-color: #000;
     color: white;
