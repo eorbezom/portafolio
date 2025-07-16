@@ -11,8 +11,7 @@ html{
 }
 /* barra de navegacion*/
 .contend-header{
-    background: linear-gradient(to top, rgba(26, 24, 24, 0.8), rgba(26, 22, 22, 0.7)),
-    url(https://imagizer.imageshack.com/img922/64/jpMBhl.jpg);
+    background-color: #000;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -26,6 +25,7 @@ html{
     max-width: 1100px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
@@ -48,6 +48,7 @@ html{
     padding: 0px;
     transition: .5s;
     text-decoration: none;
+    font-size: 25px;
     
 }
 .contend-header header nav ul li a:hover{
@@ -252,4 +253,78 @@ footer .footer-content a:hover {
 
 .contact-btn:hover {
     background-color: darkred;
+}
+
+/*
+boton responsive
+*/
+@media (max-width: 768px) {
+    .contend-header header nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .contend-header header nav.mostrar {
+        display: flex;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    .nav-responsive samp {
+        color: white;
+        font-size: 30px;
+    }
+
+    .contend-header header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contend-header header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/*
+
+logo
+*/
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+    
+    width: 200px; /* Ajusta el tamaño según lo que desees */
+    height: auto; /* Mantiene proporciones */
+}
+
+@media (max-width: 768px) {
+    .contend-header header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+            }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-responsive {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
 }
